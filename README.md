@@ -1,17 +1,10 @@
-# Configurações
+#  Node MaaS Divide
 
-- Editar o `.github/CODEOWNERS` e deixar apenas os times relevantes para o projeto
-- Entrar no CircleCi e ativar os builds para esse projeto
-- Conferir que os dados foram enviados ao codecov.io
+[![CircleCI](https://circleci.com/gh/b2wads/node-maas-divide/tree/master.svg?style=svg)](https://circleci.com/gh/b2wads/node-maas-divide/tree/master)
+[![codecov](https://codecov.io/gh/b2wads/node-maas-divide/branch/master/graph/badge.svg)](https://codecov.io/gh/b2wads/node-maas-divide)
 
+Math as a Service - Node.js - Operação de Divisão
 
-#  << Nome do Projeto >>
-
-[![CircleCI](https://circleci.com/gh/b2wads/nodejs-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/b2wads/nodejs-boilerplate/tree/master)
-[![codecov](https://codecov.io/gh/b2wads/nodejs-boilerplate/branch/master/graph/badge.svg)](https://codecov.io/gh/b2wads/nodejs-boilerplate)
-
-<< Descrição do projeto >>
-  
 #  Variáveis de ambiente
 
 | Variável | Descrição | Valor padrão |
@@ -22,6 +15,27 @@
 #  Como rodar
 ```sh
 npm start
+```
+
+# Rotas
+
+## Divisão
+
+### Request
+`POST /api/v1/operations/divide`
+```javascript
+{
+  "left": 10,
+  "right": 2
+}
+```
+
+### Response
+`200 OK`
+```javascript
+{
+  "result": 5
+}
 ```
   
 
